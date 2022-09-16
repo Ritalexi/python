@@ -7,13 +7,13 @@ class Square:
     """nstantiation with optional size
        raising exceptions
     """
-    
+
     @property
     def size(self):
         """Getter that gets the integer size
         """
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """Setter that sets
