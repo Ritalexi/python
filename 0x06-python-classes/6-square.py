@@ -7,13 +7,13 @@ class Square:
     """nstantiation with optional size
        raising exceptions
     """
-    
+
     @property
     def size(self):
         """Getter that gets the integer size
         """
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """Setter that sets
@@ -41,12 +41,11 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
-
     def __init__(self, size=0, position=(0, 0)):
         """Square instantiation and rise exxcetions
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """Finding the area
