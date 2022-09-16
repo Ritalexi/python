@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""a class Square that defines a square by
+"""
+
+
 class Square:
     """nstantiation with optional size
        raising exceptions
