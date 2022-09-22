@@ -77,8 +77,7 @@ class Rectangle:
         for i in range(self.height):
             for j in range(self.width):
                 print(("#"), end="")
-            print("")
-        return ("")
-
-        if ((self.width == 0) or (self.height == 0)):
+            if ((self.width == 0) or (self.height == 0)):
             return ("")
+            print()
+        return ("")
