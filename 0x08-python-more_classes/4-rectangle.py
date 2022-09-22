@@ -82,13 +82,15 @@ class Rectangle:
         """
         Prints the rectangle with the character #
         """
+        if ((self.width == 0) or (self.height == 0)):
+                return ("")
+        rect = []
         for i in range(self.height):
             for j in range(self.width):
-                print(("#"), end="")
-            if ((self.width == 0) or (self.height == 0)):
-                return ("")
-            print()
-        return ("")
+                rect.append('#')
+            if i != self.__height - 1:
+                rect.append("\n")
+        return ("".join(rect))
 
     def __repr__(self):
         """
