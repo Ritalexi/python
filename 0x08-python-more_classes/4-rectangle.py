@@ -83,7 +83,7 @@ class Rectangle:
         Prints the rectangle with the character #
         """
         if ((self.width == 0) or (self.height == 0)):
-                return ("")
+            return ("")
         rect = []
         for i in range(self.height):
             for j in range(self.width):
