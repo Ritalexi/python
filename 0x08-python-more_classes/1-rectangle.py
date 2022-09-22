@@ -7,7 +7,7 @@ class Rectangle:
    class Rectangle defines a rectangle
    """
 
-@property
+    @property
     def width(self):
         """gets the width
         """
