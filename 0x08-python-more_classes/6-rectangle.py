@@ -88,7 +88,7 @@ class Rectangle:
         Prints the rectangle with the character #
         """
         if ((self.width == 0) or (self.height == 0)):
-                return ("")
+            return ("")
         rect = []
         for i in range(self.height):
             for j in range(self.width):
@@ -111,5 +111,5 @@ class Rectangle:
         """
         A function Print the message Bye rectangle...
         """
-        print ("Bye rectangle...")
+        print("Bye rectangle...")
         type(self).number_of_instances -= 1
