@@ -17,7 +17,6 @@ class Rectangle:
     number_of_instances = 0
     print_symbol = "#"
 
-
     def __init__(self, width=0, height=0):
         """
         initialization of the width and height
@@ -111,9 +110,8 @@ class Rectangle:
         """
         A function Print the message Bye rectangle...
         """
-        print ("Bye rectangle...")
+        print("Bye rectangle...")
         type(self).number_of_instances -= 1
-
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
@@ -123,13 +121,13 @@ class Rectangle:
             rect_1- Area of rectangle 1
             rect_2- Area of rectangle 2
         """
-        
-        if (Rectangle.area(rect_1) < Rectangle.area(rect_2)):
-            return rect_2
-        else:
-            return rect_1
 
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
+
+        if (Rectangle.area(rect_1) < Rectangle.area(rect_2)):
+            return rect_2
+        else:
+            return rect_1

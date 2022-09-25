@@ -17,7 +17,6 @@ class Rectangle:
     number_of_instances = 0
     print_symbol = "#"
 
-
     def __init__(self, width=0, height=0):
         """
         initialization of the width and height
@@ -111,5 +110,5 @@ class Rectangle:
         """
         A function Print the message Bye rectangle...
         """
-        print ("Bye rectangle...")
+        print("Bye rectangle...")
         type(self).number_of_instances -= 1
