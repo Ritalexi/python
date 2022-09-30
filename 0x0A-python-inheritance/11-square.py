@@ -1,15 +1,7 @@
 #!/usr/bin/python3
-"""
-more class base
-"""
+"""Contains a class that inherits from `BaseGeometry"""
 
-
-Rectangle = __import__('9-rectangle').Rectangle
-
-
-"""
-Square class
-"""
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Square(Rectangle):
@@ -24,4 +16,4 @@ class Square(Rectangle):
 
     def __str__(self):
         """ print """
-        return ("[Rectangle] " + str(self.__size) + "/" + str(self.__size))
+        return ("[Square] " + str(self.__size) + "/" + str(self.__size))
