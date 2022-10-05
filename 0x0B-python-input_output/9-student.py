@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module that retrieves a dictionary representation
+Module of class Student
 """
 
 
