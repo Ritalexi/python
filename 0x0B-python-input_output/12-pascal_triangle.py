@@ -12,8 +12,6 @@ def pascal_triangle(n):
         Returns: list of lists
     """
 
-    if n <= 0:
-        return ([""])
     ans = [[0 for j in range(i + 1)] for i in range(n)]
     for i in range(5):
         for j in range(i + 1):

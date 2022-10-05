@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-Module of class Student
+"""Module of class Student
 """
 
 
