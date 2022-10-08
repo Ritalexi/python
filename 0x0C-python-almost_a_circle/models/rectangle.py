@@ -3,8 +3,8 @@
 Module of the rectangle class
 """
 
+from models.base import Base
 
-from models.Base import Base
 
 class Rectangle(Base):
     """
@@ -19,7 +19,6 @@ class Rectangle(Base):
         self.y = y
 
         Base.__init__(self, id)
-        
 
     @property
     def width(self):
