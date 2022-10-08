@@ -10,7 +10,7 @@ class Base:
         Arguments:
             @id: The id for a specific instance.
     """
-    
+
     __nb_objects = 0
 
     def __init__(self, id=None):
