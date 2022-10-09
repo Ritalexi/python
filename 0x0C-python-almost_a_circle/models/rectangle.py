@@ -13,45 +13,45 @@ class Rectangle(Base):
     base
     """
     def __init__(self, width, height, x=0, y=0, id=None):
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
 
         super().__init__(id)
 
     @property
     def width(self):
         """Return private attribute"""
-        return self.__width
+        return self.width
     @width.setter
     def width(self, width):
         """Setting private attribute"""
-        self.___width = width
+        self.width = width
 
     @property
     def height(self):
         """Return private attribute"""
-        return self.__height
+        return self.height
     @height.setter
     def height(self, height):
         """Setting private attribute"""
-        self.__height = height
+        self.height = height
 
     @property
     def x(self):
         """Return private attribute"""
-        return self.__x
+        return self.x
     @x.setter
     def x(self, x):
         """Setting private attribute"""
-        self.__x = x
+        self.x = x
 
     @property
     def y(self):
         """Return private attribute"""
-        return self.__y
+        return self.y
     @y.setter
     def y(self, y):
         """Setting private attribute"""
-        self.__y = y
+        self.y = y
