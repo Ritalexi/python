@@ -2,7 +2,6 @@
 """
 Module of the rectangle class
 """
-
 from models.base import Base
 
 
@@ -23,35 +22,35 @@ class Rectangle(Base):
     @property
     def width(self):
         """Return private attribute"""
-        return self.width
+        return self.__width
     @width.setter
     def width(self, width):
         """Setting private attribute"""
-        self.width = width
+        self.__width = width
 
     @property
     def height(self):
         """Return private attribute"""
-        return self.height
+        return self.__height
     @height.setter
     def height(self, height):
         """Setting private attribute"""
-        self.height = height
+        self.__height = height
 
     @property
     def x(self):
         """Return private attribute"""
-        return self.x
+        return self.__x
     @x.setter
     def x(self, x):
         """Setting private attribute"""
-        self.x = x
+        self.__x = x
 
     @property
     def y(self):
         """Return private attribute"""
-        return self.y
+        return self.__y
     @y.setter
     def y(self, y):
         """Setting private attribute"""
-        self.y = y
+        self.__y = y
