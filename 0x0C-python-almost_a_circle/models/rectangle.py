@@ -79,7 +79,9 @@ class Rectangle(Base):
         prints in stdout the Rectangle
         instance with the character #
         """
+        [print("") for k in range(self.__y)]
         for i in range(self.__height):
+            [print("", end=" ") for l in range(self.__x)]
             for j in range(self.__width):
                 print("#", end="")
             print()
@@ -94,3 +96,12 @@ class Rectangle(Base):
                                                         self.__y,
                                                         self.__width,
                                                         self.__height))
+
+    def update(self, *args):
+    """
+    assigns an argument to each attribute
+    """
+        if args and len(args) > 0:
+            keys = ["id", "width", "height", "x", "y"]
+            for i, v in enumerate(args):
+                setattr(self, keys[i], v)
