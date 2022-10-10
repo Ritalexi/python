@@ -16,7 +16,6 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-
         super().__init__(id)
 
     @property
@@ -59,7 +58,6 @@ class Rectangle(Base):
         self.validation("y", value)
         self.__y = value
 
-
     @staticmethod
     def validation(attribute, value):
         if type(value) != int:
@@ -85,3 +83,14 @@ class Rectangle(Base):
             for j in range(self.__width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+        """
+        update the class Rectangle
+        and return a string
+        """
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                        self.__x,
+                                                        self.__y,
+                                                        self.__width,
+                                                        self.__height))
